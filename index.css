@@ -37,7 +37,7 @@ body {
   position: absolute;
   height: 100%;
   width: 100%;
-  background-image: url("woman.jpg");
+  background-image: url("man.jpg");
   background-repeat: no-repeat;
   background-position: right;
   background-size: contain;
@@ -154,11 +154,17 @@ body {
   }
 }
 @media (max-width: 576px) {
+  .main {
+    align-items: start;
+  }
+  .motivation {
+    align-self: end;
+  }
   .promo {
     align-items: start;
   }
   .promo__image {
-    background-position: 60% 0;
+    background-position: 35% 0;
     background-size: cover;
   }
   .promo__shadow {
@@ -178,14 +184,3 @@ body {
   }
 }
 
-@media (max-width: 450px) {
-  .main {
-    align-items: start;
-  }
-  .promo__image {
-    background-position: 80% 0;
-  }
-  .motivation {
-    align-self: end;
-  }
-}
